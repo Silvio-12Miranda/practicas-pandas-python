@@ -1,13 +1,14 @@
 import pandas as pd
 
 def run():
-    dataset = {
-            'cars' : ['bmw', 'volvo', 'ford'],
-            'passing' : [3, 7, 2]
-            }    
-    x = pd.DataFrame(dataset)
+    data = {
+            'nombres' : ['Silvio', 'Joserra', 'Miguel'],
+            'edades' : [26, 26, 29],
+            'altura' : [1.75, 1.75, 1.70],
+            'peso' : [85, 110, 100]
+            }
+    x = pd.DataFrame(data)
     print(x)
-    print(f'la version de pandas es: {pd.__version__}')
 
 if __name__ == '__main__':
     run()
