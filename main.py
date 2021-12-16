@@ -1,7 +1,8 @@
 import pandas as pd
 
 def run():
-    x = pd.read_csv('data.csv')
+    #pd.options.display.max_row = 1000
+    x = pd.read_json('datajs.js')
     print(x)
 
 if __name__ == '__main__':
