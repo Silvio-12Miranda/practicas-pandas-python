@@ -16,6 +16,9 @@ def run():
         if x.loc[i, 'Duration'] < 60:
             x.drop(i, inplace = True)
 
+    #x = x.duplicated()
+    x.drop_duplicates(inplace = True)
+
     print(x)
 
 if __name__ == '__main__':
