@@ -2,7 +2,7 @@ import pandas as pd
 
 def run():
     x = pd.read_csv('dirtydata.csv')
-    #x.dropna(inplace = True)
+    x.dropna(inplace = True)
     #x.fillna(1, inplace = True)
     #x['Calories'].fillna('VALUE', inplace = True)
     x['Date'] = pd.to_datetime(x['Date'])
